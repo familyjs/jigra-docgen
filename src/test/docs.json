@@ -1,0 +1,458 @@
+{
+  "api": {
+    "name": "HapticsPlugin",
+    "slug": "hapticsplugin",
+    "docs": "## Docs from JSDoc comments!\n\nThis content is from the JSDOC comments on top of\nthe `HapticsPlugin` interface. All the API data below\nis generated from comments from its methods, interfaces\nand enums.\n\nTake a look at the test [HapticsPlugin interface source file](https://github.com/navify/jigra-docgen/blob/master/src/test/fixtures/definitions.ts).",
+    "tags": [],
+    "methods": [
+      {
+        "name": "impact",
+        "signature": "(options: HapticsImpactOptions, x?: number | undefined) => Promise<HapticsImpact>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "The\nimpact   options",
+            "type": "HapticsImpactOptions"
+          },
+          {
+            "name": "x",
+            "docs": "",
+            "type": "number | undefined"
+          }
+        ],
+        "returns": "Promise<HapticsImpact>",
+        "tags": [
+          {
+            "name": "param",
+            "text": "options The\nimpact   options"
+          },
+          {
+            "name": "since",
+            "text": "1.0.0"
+          }
+        ],
+        "docs": "Trigger a haptics \"impact\" feedback",
+        "complexTypes": [
+          "HapticsImpact",
+          "HapticsImpactOptions"
+        ],
+        "slug": "impact"
+      },
+      {
+        "name": "notification",
+        "signature": "(options?: HapticsNotificationOptions | undefined) => Promise<string | number>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "HapticsNotificationOptions | undefined"
+          }
+        ],
+        "returns": "Promise<string | number>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "1.0.0"
+          }
+        ],
+        "docs": "Trigger a haptics \"notification\" feedback",
+        "complexTypes": [
+          "HapticsNotificationOptions"
+        ],
+        "slug": "notification"
+      },
+      {
+        "name": "vibrate",
+        "signature": "(options?: VibrateOptions | undefined) => Promise<number>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "VibrateOptions | undefined"
+          }
+        ],
+        "returns": "Promise<number>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "1.0.0"
+          }
+        ],
+        "docs": "Vibrate the device",
+        "complexTypes": [
+          "VibrateOptions"
+        ],
+        "slug": "vibrate"
+      },
+      {
+        "name": "addListener",
+        "signature": "(eventName: 'vibrate', listenerFunc: VibrateListener) => Promise<void>",
+        "parameters": [
+          {
+            "name": "eventName",
+            "docs": "",
+            "type": "'vibrate'"
+          },
+          {
+            "name": "listenerFunc",
+            "docs": "",
+            "type": "VibrateListener"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [
+          {
+            "name": "since",
+            "text": "1.0.0"
+          }
+        ],
+        "docs": "Add a listener. Callback has VibrateOptions.",
+        "complexTypes": [
+          "VibrateListener"
+        ],
+        "slug": "addlistenervibrate"
+      },
+      {
+        "name": "removeAllListeners",
+        "signature": "() => void",
+        "parameters": [],
+        "returns": "void",
+        "tags": [
+          {
+            "name": "since",
+            "text": "1.0.0"
+          }
+        ],
+        "docs": "Remove all the listeners that are attached to this plugin",
+        "complexTypes": [],
+        "slug": "removealllisteners"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [
+    {
+      "name": "HapticsImpact",
+      "slug": "hapticsimpact",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "value",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "HapticsImpactOptions",
+      "slug": "hapticsimpactoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "style",
+          "tags": [
+            {
+              "text": "HapticsImpactStyle.Heavy",
+              "name": "default"
+            },
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "Impact Feedback Style\n\nThe mass of the objects in the collision simulated by a\n[`UIImpactFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uiimpactfeedbackstyle) object.\nType is a `HapticsImpactStyle`.",
+          "complexTypes": [
+            "HapticsImpactStyle"
+          ],
+          "type": "HapticsImpactStyle"
+        },
+        {
+          "name": "value",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [],
+          "type": "boolean"
+        },
+        {
+          "name": "recursive",
+          "tags": [],
+          "docs": "",
+          "complexTypes": [
+            "HapticsImpactOptions"
+          ],
+          "type": "HapticsImpactOptions"
+        }
+      ]
+    },
+    {
+      "name": "HapticsNotificationOptions",
+      "slug": "hapticsnotificationoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "type",
+          "tags": [
+            {
+              "text": "HapticsNotificationType.SUCCESS",
+              "name": "default"
+            },
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "Notification Feedback Type\n\nThe type of notification feedback generated by a [`UINotificationFeedbackGenerator`](https://developer.apple.com/documentation/uikit/uinotificationfeedbacktype) object.",
+          "complexTypes": [
+            "HapticsNotificationType"
+          ],
+          "type": "HapticsNotificationType"
+        }
+      ]
+    },
+    {
+      "name": "VibrateOptions",
+      "slug": "vibrateoptions",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "duration",
+          "tags": [
+            {
+              "text": "300",
+              "name": "default"
+            },
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "Duration of the vibration in milliseconds.\n\nNot supported in iOS.",
+          "complexTypes": [],
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "name": "VibrateListenerEvent",
+      "slug": "vibratelistenerevent",
+      "docs": "",
+      "tags": [],
+      "methods": [],
+      "properties": [
+        {
+          "name": "style",
+          "tags": [
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The style of vibration.",
+          "complexTypes": [
+            "HapticsImpactStyle"
+          ],
+          "type": "HapticsImpactStyle"
+        },
+        {
+          "name": "duration",
+          "tags": [
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "The duration of the vibration.",
+          "complexTypes": [],
+          "type": "number"
+        },
+        {
+          "name": "repeat",
+          "tags": [
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "How often this vibrate event is repeated.",
+          "complexTypes": [
+            "RepeatSchedule"
+          ],
+          "type": "RepeatSchedule"
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "name": "HapticsImpactStyle",
+      "slug": "hapticsimpactstyle",
+      "members": [
+        {
+          "name": "Heavy",
+          "value": "'HEAVY'",
+          "tags": [
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "A collision between small, light user interface elements"
+        },
+        {
+          "name": "Medium",
+          "value": "'MEDIUM'",
+          "tags": [
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "A collision between moderately sized user interface elements"
+        },
+        {
+          "name": "Light",
+          "value": "'LIGHT'",
+          "tags": [
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "A collision between small, light user interface elements"
+        }
+      ]
+    },
+    {
+      "name": "HapticsNotificationType",
+      "slug": "hapticsnotificationtype",
+      "members": [
+        {
+          "name": "SUCCESS",
+          "value": "'SUCCESS'",
+          "tags": [
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "A notification feedback type indicating that a task has completed successfully"
+        },
+        {
+          "name": "WARNING",
+          "value": "'WARNING'",
+          "tags": [
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "A notification feedback type indicating that a task has produced a warning"
+        },
+        {
+          "name": "ERROR",
+          "value": "'ERROR'",
+          "tags": [
+            {
+              "text": "1.0.0",
+              "name": "since"
+            }
+          ],
+          "docs": "A notification feedback type indicating that a task has failed"
+        }
+      ]
+    }
+  ],
+  "typeAliases": [
+    {
+      "name": "VibrateListener",
+      "slug": "vibratelistener",
+      "docs": "The vibrate listener callback function.",
+      "types": [
+        {
+          "text": "(event: VibrateListenerEvent): void",
+          "complexTypes": [
+            "VibrateListenerEvent"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RepeatSchedule",
+      "slug": "repeatschedule",
+      "docs": "How often a vibration repeats.",
+      "types": [
+        {
+          "text": "'hourly'",
+          "complexTypes": []
+        },
+        {
+          "text": "'daily'",
+          "complexTypes": []
+        },
+        {
+          "text": "'weekly'",
+          "complexTypes": []
+        },
+        {
+          "text": "'monthly'",
+          "complexTypes": []
+        }
+      ]
+    }
+  ],
+  "pluginConfigs": [
+    {
+      "name": "Haptics",
+      "slug": "haptics",
+      "properties": [
+        {
+          "name": "style",
+          "tags": [
+            {
+              "text": "1.0.0",
+              "name": "since"
+            },
+            {
+              "text": "native",
+              "name": "default"
+            },
+            {
+              "text": "\"native\"",
+              "name": "example"
+            }
+          ],
+          "docs": "Configure the style.",
+          "complexTypes": [],
+          "type": "'none' | 'native' | undefined"
+        },
+        {
+          "name": "duration",
+          "tags": [
+            {
+              "text": "1.2.3",
+              "name": "since"
+            },
+            {
+              "text": "123",
+              "name": "example"
+            }
+          ],
+          "docs": "Configure the duration.",
+          "complexTypes": [],
+          "type": "number | undefined"
+        }
+      ],
+      "docs": "Haptics can be configured with this options:"
+    }
+  ]
+}
