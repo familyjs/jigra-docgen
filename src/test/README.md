@@ -35,7 +35,7 @@ the `HapticsPlugin` interface. All the API data below
 is generated from comments from its methods, interfaces
 and enums.
 
-Take a look at the test [HapticsPlugin interface source file](https://github.com/navify/jigra-docgen/blob/master/src/test/fixtures/definitions.ts).
+Take a look at the test [HapticsPlugin interface source file](https://github.com/familyjs/jigra-docgen/blob/master/src/test/fixtures/definitions.ts).
 
 ### impact(...)
 
@@ -238,7 +238,7 @@ In `jigra.config.json`:
 In `jigra.config.ts`:
 
 ```ts
-/// <reference types="@jigra/haptics" />
+/// <reference types="@jigra/docgen" />
 
 import { JigraConfig } from '@jigra/cli';
 

@@ -41,8 +41,8 @@ page for the Github repo and NPM package, and the anchors within the
 docs can also be linked to and shared.
 ```
 
-- [Example Readme Output](https://github.com/navify/jigra-docgen/blob/main/src/test/README.md)
-- [Example JSON Output](https://github.com/navify/jigra-docgen/blob/main/src/test/docs.json)
+- [Example Readme Output](https://github.com/familyjs/jigra-docgen/blob/main/src/test/README.md)
+- [Example JSON Output](https://github.com/familyjs/jigra-docgen/blob/main/src/test/docs.json)
 
 
 ## CLI
@@ -76,3 +76,9 @@ docgen --api HapticsPlugin --output-readme README.md
 ## API
 
 The same API that's available to the CLI can also be imported from `@jigra/docgen`.
+
+
+## Related
+
+- [Jigra](https://jigrajs.web.app/)
+- [Jigra Community Plugins](https://github.com/jigra-community)

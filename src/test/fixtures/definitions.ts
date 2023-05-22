@@ -34,7 +34,7 @@ declare module '@jigra/cli' {
  * is generated from comments from its methods, interfaces
  * and enums.
  *
- * Take a look at the test [HapticsPlugin interface source file](https://github.com/navify/jigra-docgen/blob/master/src/test/fixtures/definitions.ts).
+ * Take a look at the test [HapticsPlugin interface source file](https://github.com/familyjs/jigra-docgen/blob/master/src/test/fixtures/definitions.ts).
  */
 export interface HapticsPlugin {
   /**
@@ -65,10 +65,7 @@ export interface HapticsPlugin {
    *
    * @since 1.0.0
    */
-  addListener(
-    eventName: 'vibrate',
-    listenerFunc: VibrateListener,
-  ): Promise<void>;
+  addListener(eventName: 'vibrate', listenerFunc: VibrateListener): Promise<void>;
 
   /**
    * Add a listener. Callback has VibrateOptions.
