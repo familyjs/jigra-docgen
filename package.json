@@ -1,6 +1,6 @@
 {
   "name": "@jigra/docgen",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Docs Readme Markdown and JSON Generator for Jigra Plugins",
   "keywords": [
     "jigra docs generation",
